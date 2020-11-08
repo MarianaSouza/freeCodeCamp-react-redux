@@ -1,5 +1,3 @@
-React: Add Event Listeners
-
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +14,7 @@ class MyComponent extends React.Component {
     document.addEventListener("click", this.handleClick);
   }
   componentWillUnmount() {
-document.removeEventListener("keydown", this.handleKeyPress);
+    document.removeEventListener("keydown", this.handleKeyPress);
   }
   // Change code above this line
   handleClick(event) {
