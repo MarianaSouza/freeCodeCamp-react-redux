@@ -23,6 +23,7 @@ const immutableReducer = (state = todos, action) => {
     case ADD_TO_DO:
       // Don't mutate state:
       return [...state].concat(action.todo);
+    //Or : return [...state, action.todo]
     default:
       return state;
   }
